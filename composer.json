@@ -1,0 +1,12 @@
+{
+    "name": "phangoapp/pages",
+    "description": "Basic module for create pages",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Antonio de la Rosa",
+            "email": "webmaster@web-t-sys.com"
+        }
+    ],
+    "minimum-stability": "dev-master"    
+}
