@@ -42,6 +42,13 @@ class IndexController extends Controller
         if($check_id==false)
         {
             
+            if(!isset($_SESSION['language']))
+            {
+                
+                $_SESSION['language']=PhangoApp\PhaI18n\I18n::$language;
+                
+            }
+            
             Webmodel::$model['page']->set_conditions(['WHERE `name_'.$_SESSION['language'].'`=?', [$id]]);
             
             $arr_page=Webmodel::$model['page']->select_a_row_where();
